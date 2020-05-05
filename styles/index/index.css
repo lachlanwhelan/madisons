@@ -14,7 +14,7 @@ main p {
 
 .header {
   height: 100vh;
-  background-image: url("/images/pasta.jpg");
+  background-image: url("madisons/images/pasta.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
