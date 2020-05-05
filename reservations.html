@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/layout/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/reservations/reservations.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Madison's Restaurant | Reservations</title>
+</head>
+<body>
+    <!--NAVIGATION-->
+    <nav class="navigation navigation--dark">
+
+        <a class="navigation__logo" href="/"><span>Madison's</span></a>
+
+        <ul class="navigation__menu">
+            <li><a class="navigation__link" href="/">Home</a></li>
+            <li><a class="navigation__link" href="/menu.html">Menu</a></li>
+            <li><a class="navigation__link" href="/whatson.html">Whatson</a></li>
+            <li><a class="navigation__link" href="/reservations.html">Reservations</a></li>
+        </ul>
+        
+        <div class="navigation__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="reservations__title">Reservations</h1>
+
+        <p class="reservations__overview">Let’s talk 👋 Don’t hesitate to reach out with the contact information below, or send a message using the form.
+
+            To book a table, call us or use the form below.</p>
+
+
+            <!--RESTAURANT INFO-->
+        <section class="information">
+            <div class="information__grp">
+                <div class="information__location">
+                    <h4>Location</h4>
+                    <p>1 Victoria St, Ashfield NSW 2131 madisons@example.com (555) 555 1234</p>
+                    <!--GOOGLE MAP-->
+                    <div id="map"></div>
+                </div>
+                <div class="information__hours">
+                    <h4>Open Hours</h4>
+                    <p>Mon: closed </p>
+                    <p>Tue – Sun: 11:30 am – 10:00 pm </p>
+                </div>
+            </div>
+
+            <!--RESERVATION FORM-->
+            <section class="booking">
+                <p class="booking__overview">To book a table,call us(123)444–5678 or use the form below.</p>
+    
+                <form class="booking__form form">
+                    <div class="form__input">
+                        <label>Name</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="form__input">
+                        <label>Email</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="form__input">
+                        <label>Phone</label>
+                        <input type="text"/>
+                    </div>
+                    <div class="form__date">
+                        <label>Date</label>
+                        <input type="date"/>
+                    </div>
+    
+                    <div class="form__dropdown">
+                        <label>Time</label>
+                        <select>
+                            <option>11:30am</option>
+                        </select>
+                    </div>
+    
+                    <div class="form__dropdown">
+                        <label>Party size</label>
+                        <select>
+                            <option>1 person</option>
+                        </select>
+                    </div>
+    
+                    <div class="form__txtarea">
+                        <label>Special requests</label>
+                        <textarea></textarea>
+                    </div>
+    
+                    <input class="form__submit" type="submit" value="Submit"/>
+                </form>
+            </section>
+
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <section class="footer__socials footer__socials--dark">
+            <a href="#"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-yelp fa-2x" aria-hidden="true"></i></a>
+        </section>
+
+        <nav class="footer__nav">
+            <ul class="footer__menu">
+                <li><a class="footer__link" href="/">Home</a></li>
+                <li><a class="footer__link" href="menu.html">Menu</a></li>
+                <li><a class="footer__link" href="/whatson.html">Whatson</a></li>
+                <li><a class="footer__link" href="/reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__logo">
+           <a><span class="logo">Madisons</span></a>
+        </div>
+    </footer>
+    
+</body>
+<script src="main.js"></script>
+<script>
+    var map;
+    function initMap() {
+        //yeo park coords
+        var yeo = {lat: -33.901289, lng: 151.1294483};
+        //instance of google map - provide container 'map'
+        map = new google.maps.Map(document.getElementById('map'),{zoom: 15, center: yeo});
+
+        //google red marker position of yeo
+        var marker = new google.maps.Marker({position: yeo, map: map})
+    }
+  </script>
+  
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsnoPgf7f3-AykG6yWlYO4R1QKL0yoQxQ&callback=initMap">
+</script>
+<script src="/form.js"></script>
+</html>

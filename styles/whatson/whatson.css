@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+main {
+  text-align: center;
+}
+
+.title {
+  margin-top: 3em;
+  font-size: 3em;
+  font-family: "Bitter", serif;
+}
+
+.text {
+  margin: 1em;
+  font-family: "Bitter", serif;
+}
+
+.events {
+  display: -ms-grid;
+  display: grid;
+}
+
+.events__item {
+  margin: 1em;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 5em;
+  min-height: 300px;
+}
+
+.overlay {
+  background-color: rgba(61, 61, 61, 0.466);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Bitter", serif;
+}
+
+.overlay p {
+  max-width: 400px;
+}
+
+.events__item:first-child {
+  background-image: url(/images/dish.jpg);
+}
+
+.events__item:nth-child(2) {
+  background-image: url(/images/whiskey.jpg);
+}
+
+.events__item:nth-child(3) {
+  background-image: url(/images/burger.jpg);
+}
+
+.events__item:nth-child(4) {
+  background-image: url(/images/platter.jpg);
+}
+
+.events__item:nth-child(5) {
+  background-image: url(/images/cupcake.jpg);
+}
+
+@media only screen and (min-width: 900px) {
+  .events {
+    padding: 8em;
+    padding-top: 0;
+    display: -ms-grid;
+    display: grid;
+    gap: 5px;
+        grid-template-areas: "one one two" "one one five" "three four five";
+    margin-bottom: 4em;
+  }
+  .events__item {
+    margin: 0;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+  }
+  .overlay {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    padding: 2em;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .overlay:hover {
+    background-color: rgba(61, 61, 61, 0.246);
+    cursor: pointer;
+  }
+  .events__item:first-child {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: one;
+    background-image: url(/images/dish.jpg);
+  }
+  .events__item:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: two;
+    background-image: url(/images/whiskey.jpg);
+  }
+  .events__item:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: three;
+    background-image: url(/images/burger.jpg);
+  }
+  .events__item:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: four;
+    background-image: url(/images/cupcake.jpg);
+  }
+  .events__item:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: five;
+    min-height: 400px;
+    background-image: url(/images/platter.jpg);
+  }
+}
+/*# sourceMappingURL=whatson.css.map */

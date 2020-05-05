@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+main {
+  font-family: "Bitter", serif;
+  text-align: center;
+}
+
+#map {
+  margin: 1em 0;
+  height: 500px;
+  width: 100%;
+}
+
+.reservations__title {
+  margin-top: 5em;
+  text-align: center;
+}
+
+.reservations__overview {
+  text-align: center;
+  line-height: 35px;
+  margin: 3em auto;
+  max-width: 800px;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5em;
+}
+
+.information__grp {
+  font-size: 1.3em;
+}
+
+.information h4 {
+  padding: 2em 0;
+}
+
+.booking__overview {
+  font-size: 1.2em;
+  padding: 1  em 0;
+}
+
+.form {
+  width: 100%;
+  margin: auto;
+}
+
+label {
+  font-size: 1.2em;
+  font-family: "Bitter", serif;
+}
+
+.form__input {
+  text-align: left;
+  margin: 1em 0;
+}
+
+.form__input input {
+  border: 2px solid #adadad;
+  font-size: 18px;
+  padding: 1em;
+  width: 100%;
+}
+
+.form__input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form__date {
+  margin: 1em 0;
+  text-align: left;
+}
+
+.form__date label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__date input {
+  border: 2px solid #adadad;
+  font-size: 18px;
+  padding: 0.5em;
+}
+
+.form__dropdown {
+  margin: 1em 0;
+  text-align: left;
+}
+
+.form__dropdown label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__dropdown select {
+  border: 2px solid #adadad;
+  font-size: 18px;
+  padding: 0.5em;
+}
+
+.form__txtarea {
+  margin: 1em 0;
+  text-align: left;
+}
+
+.form__txtarea label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__txtarea textarea {
+  border: 2px solid #adadad;
+  font-size: 18px;
+  padding: 0.5em;
+  width: 100%;
+  height: 150px;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+.form__submit {
+  border: 4px solid #5e5e5e;
+  background-color: black;
+  color: white;
+  width: 150px;
+  padding: 1em;
+  margin: 2em auto;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+  main {
+    text-align: left;
+  }
+  .form {
+    padding: 0 2em;
+  }
+  .information {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=reservations.css.map */

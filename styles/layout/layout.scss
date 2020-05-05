@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+@import '../main/main.scss';
+
+$primary-font: 'Bitter', serif;
+
+
+//HEADER MOBILE NAVIGATION
+
+.navigation{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 1.6em;
+    font-family: $primary-font;
+    @include flexRowCenter;
+}
+
+.navigation--dark{
+    background-color: black;
+}
+
+.navigation__logo{
+    color: white;
+}
+
+.navigation__menu{
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+}
+
+.navigation__menu.show{
+    transform: translateX(0);
+}
+
+.navigation__link{
+    padding: 1em;
+    padding-left: 2em; 
+    color: white;
+}
+
+.navigation__link:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+.navigation__toggle{
+    margin-left: auto;
+    position: relative;
+    height: 20px;
+    width: 35px;
+    cursor: pointer;
+
+    span{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        transition: 0.5s ease;
+    }
+}
+
+
+.navigation__toggle span:first-child{
+    top:0;
+}
+.navigation__toggle span:nth-child(2){
+    top:10px;
+    transform: translateX(-10px);
+}
+
+.navigation__toggle span:nth-child(3){
+    top: 20px;
+}
+
+.navigation__toggle.show {
+    span:nth-child(2){
+        transform: translateX(0px);
+    }
+}
+
+//FOOTER MOBILE NAVIGATION
+
+.footer__socials{
+    @include flexRowCenter();
+    padding: 1em;
+}
+
+.footer__socials{
+    a{
+        margin: 0 1em;
+        color: white;
+    }
+}
+
+.footer__socials--dark{
+    background-color: black;
+}
+
+.footer__menu{
+    padding: 1em;
+    @include flexRowCenter();
+}
+
+.footer__link{
+    font-weight: bold;
+    padding: 1em;
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+.footer__link:hover{
+    border-bottom-color:black;
+}
+
+
+.footer__logo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0.5em;
+    font-family: $primary-font;
+}
+
+
+@media only screen and(min-width: 860px){
+
+    .navigation{
+        padding: 1em;
+
+    }
+
+    .navigation__link{
+        padding: 1em;
+    }
+    .navigation__menu{
+        margin-left: auto;
+        @include flexRowCenter();
+        transform: none;
+        position: static;
+        width: auto;
+    }
+
+    .navigation__toggle{
+        display: none;
+    }
+    
+}

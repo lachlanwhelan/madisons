@@ -1,0 +1,132 @@
+@import '../main/main.scss';
+
+main{
+    text-align: center;
+}
+
+
+.title{
+    margin-top: 3em;
+    font-size: 3em;
+    @include font();
+}
+
+.text{
+    margin: 1em;
+    @include font();
+}
+
+.events{
+    display: grid;
+}
+
+.events__item{
+    margin: 1em;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 5em;
+    min-height: 300px;
+}
+
+.overlay{
+    background-color: rgba(61, 61, 61, 0.466);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include font();
+}
+
+.overlay p {
+    max-width: 400px;
+}
+
+.events__item:first-child{
+    background-image: url(/images/dish.jpg);
+}
+
+.events__item:nth-child(2){
+    background-image: url(/images/whiskey.jpg);
+    
+}
+.events__item:nth-child(3){
+background-image: url(/images/burger.jpg);
+}
+.events__item:nth-child(4){
+    background-image: url(/images/platter.jpg);
+}
+.events__item:nth-child(5){
+    background-image: url(/images/cupcake.jpg);
+}
+
+
+@media only screen and (min-width: 900px){
+    .events{
+        padding:8em;
+        padding-top: 0;
+        display: grid;
+        gap: 5px;
+        grid-template-areas: 
+        "one one two"
+        "one one five"
+        "three four five"
+        ;
+        margin-bottom: 4em;
+    }
+
+    .events__item{
+        margin: 0;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        width: 100%;
+    }
+
+    .overlay{
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        text-align: left;
+        padding: 2em;
+        transition: 0.5s ease;
+    }
+
+    .overlay:hover{
+        background-color: rgba(61, 61, 61, 0.246);
+        cursor: pointer;
+    }
+    
+
+    .events__item:first-child{
+        grid-area: one;
+        background-image: url(/images/dish.jpg);
+    }
+    
+    .events__item:nth-child(2){
+        grid-area: two;
+        background-image: url(/images/whiskey.jpg);
+    }
+    .events__item:nth-child(3){
+        grid-area: three;
+        background-image: url(/images/burger.jpg);
+    }
+    .events__item:nth-child(4){
+        grid-area: four;
+        background-image: url(/images/cupcake.jpg);
+    }
+    .events__item:nth-child(5){
+        grid-area: five;
+        min-height: 400px;
+        background-image: url(/images/platter.jpg);
+    }
+}

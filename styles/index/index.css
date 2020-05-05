@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+main {
+  text-align: center;
+}
+
+main h1, main h2, main h3 {
+  font-family: 'Bitter', serif;
+}
+
+main p {
+  line-height: 25px;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("/images/pasta.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  font-family: 'Bitter', serif;
+}
+
+.header__title--big {
+  font-size: 3em;
+}
+
+.header__title--light {
+  color: white;
+}
+
+.header__emphasis {
+  display: block;
+  height: 5px;
+  background-color: white;
+  max-width: 20%;
+}
+
+.intro {
+  margin: 3em auto;
+  max-width: 600px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.intro__title {
+  margin: 1em;
+}
+
+.intro__text {
+  margin: 1em;
+}
+
+.intro__text p {
+  margin: 1em 0;
+}
+
+.picture-board {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.picture-board--menu {
+  background-image: url(/images/secondpasta.jpg);
+}
+
+.picture-board__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(54, 54, 54, 0.349);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.picture-board__title {
+  color: white;
+  font-size: 3em;
+}
+
+.menu-section {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.menu-overview {
+  padding: 3em;
+  max-width: 600px;
+  margin: auto;
+}
+
+.menu {
+  margin: 2em;
+}
+
+.menu__title {
+  font-size: 3em;
+  margin: 1em 0;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-item {
+  margin: 1em auto;
+  max-width: 300px;
+}
+
+.menu-item__course {
+  font-size: 1.5em;
+}
+
+.menu-item__name {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.menu__link, .form__submit {
+  border: 4px solid #5e5e5e;
+  background-color: black;
+  color: white;
+  width: 150px;
+  padding: 1em;
+  margin: 2em auto;
+  cursor: pointer;
+}
+
+.picture-board--book {
+  background-image: url(/images/venue.jpg);
+}
+
+.booking {
+  position: relative;
+}
+
+.booking__overview {
+  font-size: 1.2em;
+  padding: 2em 0;
+}
+
+.form {
+  width: 60%;
+  margin: auto;
+}
+
+.form__input {
+  margin: 1em 0;
+  text-align: left;
+}
+
+.form__input input {
+  border: 2px solid grey;
+  font-size: 18px;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.form__input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__date {
+  margin: 1em 0;
+  text-align: left;
+}
+
+.form__date label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__date input {
+  border: 2px solid grey;
+  font-size: 18px;
+  padding: 0.5em;
+}
+
+.form__dropdown {
+  margin: 1em 0;
+  text-align: left;
+}
+
+.form__dropdown label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__dropdown select {
+  border: 1px solid grey;
+  font-size: 18px;
+  padding: 0.5em;
+}
+
+.form__txtarea {
+  margin: 1em 0;
+  text-align: left;
+}
+
+.form__txtarea label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__txtarea textarea {
+  border: 2px solid grey;
+  font-size: 18px;
+  padding: 0.5em;
+  width: 100%;
+  height: 150px;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+.confirmation {
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+}
+
+.confirmation h2 {
+  font-size: 2em;
+  margin: 1em;
+}
+
+.confirmation h3 {
+  font-size: 1.4em;
+  margin: 1em;
+}
+
+.confirmation__card {
+  background-color: #3b3b3b;
+  color: white;
+  padding: 2em;
+  max-width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.picture-board--hours {
+  background-image: url(/images/restaurant.jpg);
+  color: white;
+}
+
+.picture-board__overlay.hours {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(31, 30, 30, 0.651);
+}
+
+.picture-board__title {
+  margin: 1em;
+}
+
+.hours__overview {
+  padding: 1em;
+}
+
+.hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Bitter", serif;
+}
+
+.hours__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.hours__item h4 {
+  font-size: 1.4em;
+}
+
+.dropdown {
+  -webkit-animation-name: dropdown;
+          animation-name: dropdown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes dropdown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+    opacity: 1;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(250px);
+            transform: translateY(250px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .menu-section {
+    opacity: 0;
+  }
+  .intro {
+    opacity: 0;
+  }
+  .fadeIn {
+    opacity: 1;
+  }
+  .header {
+    background-attachment: fixed;
+  }
+  .header__title {
+    font-size: 5em;
+  }
+  .intro {
+    margin: 6em auto;
+  }
+  .intro__title {
+    font-size: 2em;
+  }
+  .menu__list {
+    max-width: 900px;
+    margin: auto;
+  }
+  .form {
+    max-width: 600px;
+    margin: auto;
+  }
+  .picture-board {
+    background-attachment: fixed;
+  }
+  .form__submit {
+    max-width: 200px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

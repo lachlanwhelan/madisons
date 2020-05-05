@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/layout/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/index/index.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Madison's Restaurant</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navigation navigation--dark">
+
+        <a class="navigation__logo" href="/"><span>Madison's</span></a>
+
+        <ul class="navigation__menu">
+            <li><a class="navigation__link" href="/">Home</a></li>
+            <li><a class="navigation__link" href="/menu.html">Menu</a></li>
+            <li><a class="navigation__link" href="/whatson.html">Whatson</a></li>
+            <li><a class="navigation__link" href="/reservations.html">Reservations</a></li>
+        </ul>
+        
+        <div class="navigation__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header class="header">
+        <div>
+            <span class="header__emphasis"></span>
+            <h1 class="header__title header__title--big header__title--light">Madison's</h1>
+            <span class="header__emphasis"></span>
+        </div>
+    </header>
+
+    <main>
+        <!--INTRODUCTION-->
+        <section class="intro">
+            <h2 class="intro__title">Enjoy Our Food Experience</h2>
+            <article class="intro__text">
+                <p>Chef Patron Joan Smith and Executive Chef François Lemoine have teamed up to open one of the most exciting restaurants in Anytown.</p>
+                <p>Our specialty is delicious cuisine created with the ingenuity and passion inspired by the fantastic flavors of France itself.We take great pride in improving upon your favorite French dishes in new and creative ways.</p>
+            </article>
+        </section>
+
+        <!--PICTURE BOARD-->
+        <section class="picture-board picture-board--menu">
+            <div class="picture-board__overlay">
+                <span class="underline"></span>
+                <h1 class="picture-board__title">Discover Our Menu</h1>
+                <span class="underline"></span>
+            </div>
+        </section>
+
+        <!--SAMPLE MENU-->
+        <section class="menu-section">
+            <header class="menu-overview">
+                <span class="underline"></span>
+                <p class="menu-overview__text">The menu is a mix of French regional cuisines,and the menu changes with the seasons.Be sure to ask about the daily specials!</p>
+                <span class="underline"></span>
+            </header>
+
+            <div class="menu">
+                <h2 class="menu__title">Sample Menu</h2>
+
+                <section class="menu__list">
+                    <div class="menu-item">
+                        <h3 class="menu-item__course">Starter</h3>
+                        <h4 class="menu-item__name">Fricassée of Wild Mushrooms</h4>
+                        <div class="menu__text">
+                            <p>Braised wild mushrooms served with seaweed and liquid nitrogen</p>
+                            <p>$14.50</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-item__course">Main</h3>
+                        <h4 class="menu-item__name">Coq au Vin d’Alsace</h4>
+                        <div class="menu__text">
+                            <p>Chicken cooked in Riesling with onions, mushrooms and herbs</p>
+                            <p>$25.50</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <h3 class="menu-item__course">Desert</h3>
+                        <h4 class="menu-item__name">Pumpkin Soufflé</h4>
+                        <div class="menu__text">
+                            <p>With bourbon, cinnamon and molasses sauce</p>
+                            <p>$9.50</p>
+                        </div>
+                    </div>
+                </section>
+
+                <a class="menu__link">View Full Menu</a>
+            </div>
+        </section>
+
+        <!--PICTURE BOARD-->
+        <section class="picture-board  picture-board--book">
+            <div class="picture-board__overlay">
+                <span class="underline"></span>
+                <h1 class="picture-board__title">Book Your Table</h1>
+                <span class="underline"></span>
+            </div>
+        </section>
+
+        <!--RESERVATION FORM-->
+        <section class="booking">
+            <p class="booking__overview">To book a table,call us(123)444–5678 or use the form below.</p>
+
+            <form class="booking__form form" method="GET" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded">
+                <div class="form__input">
+                    <label>Name</label>
+                    <input type="text" name="Name" />
+                </div>
+                <div class="form__input">
+                    <label>Email</label>
+                    <input type="text" name="Email" />
+                </div>
+                <div class="form__input">
+                    <label>Phone</label>
+                    <input type="number" name="Phone" />
+                </div>
+                <div class="form__date">
+                    <label>Date</label>
+                    <input type="date" name="Date" />
+                </div>
+
+                <div class="form__dropdown">
+                    <label>Time</label>
+                    <select name="Time" >
+                        <option>11:30am</option>
+                    </select>
+                </div>
+
+                <div class="form__dropdown">
+                    <label>Party size</label>
+                    <select name="Party Size">
+                        <option>1 person</option>
+                    </select>
+                </div>
+
+                <div class="form__txtarea">
+                    <label>Special requests</label>
+                    <textarea name="Special Requests" ></textarea>
+                </div>
+
+                <input class="form__submit" type="submit" value="Submit"/>
+            </form>
+            <section class="confirmation">
+                <h2>Thankyou for submitting</h2>
+                <h3>Your Details</h3>
+                <div class="confirmation__card">
+    
+                </div>
+            </section>
+        </section>
+
+        <!--PICTURE BOARD-->
+        <section class="picture-board picture-board--hours">
+            <div class="picture-board__overlay hours">
+                <div class="hours__overview">
+                    <h1 class="picture-board__title">Madison's</h1>
+                    <p>Visitors will want to know who is on the other side of the page. Use this space to write about your business.</p>
+                </div>
+
+                <!--LOCATION AND OPENING HOURS-->
+                <section class="hours">
+                    <div class="hours__item">
+                        <h4>Open Hours</h4>
+                        <p>Mon: closed</p>
+                        <p>Tue-Sun: 11:30am - 10:00pm</p>
+                    </div>
+                    <div class="hours__item">
+                        <h4>Location</h4>
+                        <p>1 Victoria St, Ashfield NSW 2131</p>
+                    </div>
+                    <div class="hours__item">
+                        <h4>Reservation</h4>
+                        <p>(123) 555 1234</p>
+                        <p>mail@example.com</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <section class="footer__socials footer__socials--dark">
+            <a href="#"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-yelp fa-2x" aria-hidden="true"></i></a>
+        </section>
+
+        <nav class="footer__nav">
+            <ul class="footer__menu">
+                <li><a class="footer__link" href="/">Home</a></li>
+                <li><a class="footer__link" href="menu.html">Menu</a></li>
+                <li><a class="footer__link" href="/whatson.html">Whatson</a></li>
+                <li><a class="footer__link" href="/reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__logo">
+           <a><span class="logo">Madisons</span></a>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+<script src="form.js"></script>
+</html>

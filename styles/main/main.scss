@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+$primary-font: 'Bitter', serif;
+
+@mixin font {
+    font-family: $primary-font;
+}
+
+@mixin flex{
+    display: flex;
+}
+
+@mixin flexColCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexRowCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+.navigation {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 1.6em;
+  font-family: "Bitter", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation--dark {
+  background-color: black;
+}
+
+.navigation__logo {
+  color: white;
+}
+
+.navigation__menu {
+  background-color: black;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.navigation__menu.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.navigation__link {
+  padding: 1em;
+  padding-left: 2em;
+  color: white;
+}
+
+.navigation__link:hover {
+  background-color: #272727;
+}
+
+.navigation__toggle {
+  margin-left: auto;
+  position: relative;
+  height: 20px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.navigation__toggle span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.navigation__toggle span:first-child {
+  top: 0;
+}
+
+.navigation__toggle span:nth-child(2) {
+  top: 10px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.navigation__toggle span:nth-child(3) {
+  top: 20px;
+}
+
+.navigation__toggle.show span:nth-child(2) {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.footer__socials a {
+  margin: 0 1em;
+  color: white;
+}
+
+.footer__socials--dark {
+  background-color: black;
+}
+
+.footer__menu {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__link {
+  font-weight: bold;
+  padding: 1em;
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+
+.footer__link:hover {
+  border-bottom-color: black;
+}
+
+.footer__logo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 0.5em;
+  font-family: "Bitter", serif;
+}
+
+@media only screen and (min-width: 860px) {
+  .navigation {
+    padding: 1em;
+  }
+  .navigation__link {
+    padding: 1em;
+  }
+  .navigation__menu {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: none;
+            transform: none;
+    position: static;
+    width: auto;
+  }
+  .navigation__toggle {
+    display: none;
+  }
+}
+/*# sourceMappingURL=layout.css.map */
