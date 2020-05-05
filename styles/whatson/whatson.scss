@@ -109,24 +109,24 @@ background-image: url("/madisons/images/burger.jpg");
 
     .events__item:first-child{
         grid-area: one;
-        background-image: url(/images/dish.jpg);
+        background-image: url("/madisons/images/dish.jpg");
     }
     
     .events__item:nth-child(2){
         grid-area: two;
-        background-image: url(/images/whiskey.jpg);
+        background-image: url("/madisons/images/whiskey.jpg");
     }
     .events__item:nth-child(3){
         grid-area: three;
-        background-image: url(/images/burger.jpg);
+        background-image: url("/madisons/images/burger.jpg");
     }
     .events__item:nth-child(4){
         grid-area: four;
-        background-image: url(/images/cupcake.jpg);
+        background-image: url("/madisons/images/cupcake.jpg");
     }
     .events__item:nth-child(5){
         grid-area: five;
         min-height: 400px;
-        background-image: url(/images/platter.jpg);
+        background-image: url("/madisons/images/platter.jpg");
     }
 }

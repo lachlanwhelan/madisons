@@ -122,25 +122,25 @@ main {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: one;
-    background-image: url(/images/dish.jpg);
+    background-image: url("/madisons/images/dish.jpg");
   }
   .events__item:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: two;
-    background-image: url(/images/whiskey.jpg);
+    background-image: url("/madisons/images/whiskey.jpg");
   }
   .events__item:nth-child(3) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: three;
-    background-image: url(/images/burger.jpg);
+    background-image: url("/madisons/images/burger.jpg");
   }
   .events__item:nth-child(4) {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: four;
-    background-image: url(/images/cupcake.jpg);
+    background-image: url("/madisons/images/cupcake.jpg");
   }
   .events__item:nth-child(5) {
     -ms-grid-row: 2;
@@ -148,7 +148,7 @@ main {
     -ms-grid-column: 3;
     grid-area: five;
     min-height: 400px;
-    background-image: url(/images/platter.jpg);
+    background-image: url("/madisons/images/platter.jpg");
   }
 }
 /*# sourceMappingURL=whatson.css.map */
