@@ -434,6 +434,9 @@ input[type="submit"] {
   .picture-board {
     background-attachment: fixed;
   }
+  .hours__item {
+    width: 250px;
+  }
   .form__submit {
     max-width: 200px;
   }
